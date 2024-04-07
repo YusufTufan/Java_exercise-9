@@ -1,27 +1,31 @@
-# Sayı Tahmin Oyunu
-Bu basit Java programı, bilgisayarın rastgele bir sayı seçtiği ve kullanıcının bu sayıyı tahmin etmeye çalıştığı bir oyundur.
-
-## Nasıl Çalışır?
-
-1. Bilgisayar rastgele bir sayı seçer (1 ile 100 arasında).
-2. Kullanıcıdan bir tahmin istenir.
-3. Kullanıcının tahmini, bilgisayarın seçtiği sayı ile karşılaştırılır.
-4. Eğer tahmin doğruysa, kullanıcıya tebrik mesajı gösterilir ve oyun sona erer.
-5. Eğer tahmin yanlışsa, kullanıcıya doğru cevabın daha yukarıda veya aşağıda olduğu bilgisi verilir ve yeni bir tahmin istenir.
-6. Kullanıcı doğru cevabı bulana kadar bu işlem tekrarlanır.
+# Guess the Number Game
+Bu Java programı, bilgisayarın rastgele bir sayı seçtiği ve kullanıcının bu sayıyı tahmin etmeye çalıştığı bir oyunu simüle eder.
 
 ## Kullanım
+Programı çalıştırmak için bir Java IDE'si kullanarak veya terminalde aşağıdaki adımları takip ederek çalıştırabilirsiniz:
 
-1. Java derleyici ile `sayiTahmin.java` dosyasını derleyin: `javac sayiTahmin.java`
-2. Oluşan `.class` dosyasını çalıştırın: `java sayiTahmin`
-3. Program bilgisayarın seçtiği sayıyı tahmin etmenizi isteyecek ve her tahmin sonrasında size ipuçları verecektir.
+1. Java derleyicisi ile `sayiTahmin.java` dosyasını derleyin:  
+   ```
+   javac sayiTahmin.java
+   ```
 
-## Örnek
-```
-Lütfen tahmininizi giriniz: 50
-Şu anlık cevabın yanlış, tahmin edilen sayıdan daha yukarıdasın. Tekrar Dene!!
-Lütfen tahmininizi giriniz: 30
-Şu anlık cevabın yanlış, tahmin edilen sayıdan daha aşağıdasın. Tekrar Dene!!
-Lütfen tahmininizi giriniz: 40
-Tebrikler, doğru cevap: 40
-```
+2. Oluşturulan `.class` dosyasını çalıştırın:  
+   ```
+   java sayiTahmin
+   ```
+
+3. Program, bir sayı tahmini isteyecek. Bir sayı girin ve program, seçilen rastgele sayıyla karşılaştırarak size geri bildirimde bulunacaktır.
+
+## Oyun Akışı
+- Bilgisayar rastgele bir sayı seçer (1 ile 100 arasında).
+- Kullanıcıdan bir tahmin istenir.
+- Kullanıcının tahmini ile bilgisayarın seçtiği sayı karşılaştırılır.
+- Eğer tahmin doğru ise, tebrik mesajı gösterilir ve oyun biter.
+- Eğer tahmin yanlış ise, kullanıcıya doğru yönlendirme yapılır ve yeni bir tahmin istenir.
+
+## Notlar
+- Program, kullanıcıdan girdi almak için `Scanner` sınıfını kullanır.
+- Bilgisayarın rastgele sayı seçmesi için `Random` sınıfı kullanılır.
+- Oyun, kullanıcının 1 ile 100 arasında bir sayı tahmin etmesini sağlar.
+
+Bu README dosyası, programın nasıl çalıştırılacağını, oyunun akışını, programın kullanımını ve diğer bazı bilgileri açıklar. Ayrıca, katkıları nasıl yapabileceğiniz hakkında bilgi verir ve projenin lisansını belirtir.
